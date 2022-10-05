@@ -1,0 +1,11 @@
+# ninja log v5
+2	48	1664934299653342610	CMakeFiles/porta_1_4_1.dir/src/log.c.o	a84244f29b3eb7e0
+1	50	1664934299658000123	CMakeFiles/porta_1_4_1.dir/src/common.c.o	6adb7c8d7be9fdb0
+1	59	1664934299660785256	CMakeFiles/porta_1_4_1.dir/src/largecalc.c.o	88b535e80ff64f7b
+0	59	1664934299663720305	CMakeFiles/porta_1_4_1.dir/src/arith.c.o	5a862ad11857bb63
+1	69	1664934299678826472	CMakeFiles/porta_1_4_1.dir/src/four_mot.c.o	e0cef584c055b474
+1	73	1664934299682166481	CMakeFiles/porta_1_4_1.dir/src/inout.c.o	cfec9e5e93c20a59
+59	93	1664934299703161331	CMakeFiles/porta_1_4_1.dir/src/portsort.c.o	45d1b8f426f6dc69
+49	95	1664934299705468046	CMakeFiles/porta_1_4_1.dir/src/mp.c.o	299cf9c62f4ee01c
+60	101	1664934299711759021	CMakeFiles/porta_1_4_1.dir/src/valid.c.o	e9c4e0ac5ce9619a
+58	118	1664934299728937360	CMakeFiles/porta_1_4_1.dir/src/porta.c.o	ba8af5dbc4a1754e

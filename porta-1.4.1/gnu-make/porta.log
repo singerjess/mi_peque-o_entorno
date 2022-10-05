@@ -1,0 +1,126 @@
+
+
+
+log for ./bin/xporta dim examples/example.po 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim ../examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim -p /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.prt /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim -p /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.prt /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid format of command line
+
+
+
+log for ./bin/xporta dim -p /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.prt /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+jessiinvalid format of command line
+
+
+
+log for ./bin/xporta dim -p /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.prt /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+dimjessiinvalid format of command line
+
+
+
+log for ./bin/xporta -p /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.prt /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid command line
+
+
+
+log for ./bin/xporta -p /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.prt /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+invalid command line
+
+
+
+log for ./bin/xporta dim /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi 
+
+dimjessiinvalid format of command line
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasget esa parte
+
+
+
+log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
+
+jess capa pasasaaget esa parte
