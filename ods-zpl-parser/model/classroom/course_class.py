@@ -11,9 +11,9 @@ class CourseClass:
 
     def __eq__(self, other):
         if isinstance(other, CourseClass):
-            return other.course == self.course and other.start_time == self.start_time and \
-                   other.end_time == self.end_time and other.day == self.day
+            return other.course == self.course and other.start_time == self.start_time and other.end_time == self.end_time and other.day == self.day
         return False
 
     def __hash__(self):
-        return hash((self.course, self.start_time, self.end_time, self.day))
+        return (hash(self.course) ^ hash(self.start_time) ^ hash(self.end_time) ^ hash(
+            self.day) ^ hash((self.course, self.start_time, self.end_time, self.day)))

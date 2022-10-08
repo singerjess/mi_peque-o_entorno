@@ -6,9 +6,9 @@ class Course:
 
     def __eq__(self, other):
         if isinstance(other, Course):
-            return other.name == self.name and other.teacher == self.teacher and \
-                   other.building_number == self.building_number
+            return other.name == self.name and other.teacher == self.teacher and other.building_number == self.building_number
         return False
 
     def __hash__(self):
-        return hash((self.name, self.teacher, self.building_number))
+        return (hash(self.name) ^ hash(self.teacher) ^ hash(self.building_number) ^ hash(
+            (self.name, self.teacher, self.building_number)))

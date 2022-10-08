@@ -56,12 +56,11 @@ def parse_course_and_class(classes, classes_json_data, courses):
     for class_data in classes_json_data:
         course = Course(name=class_data[0], teacher=class_data[2], building_number=class_data[10])
         courses.add(course)
-        if class_data[4] == "":  # materia de bernardo
-            break
-        classes.add(
-            CourseClass(course=course, day=DayOfWeek[unidecode.unidecode(class_data[4]).upper()],
-                        start_time=class_data[6],
-                        end_time=class_data[8]))
+        if class_data[4] != "":
+            classes.add(
+                CourseClass(course=course, day=DayOfWeek[unidecode.unidecode(class_data[4]).upper()],
+                            start_time=class_data[6],
+                            end_time=class_data[8]))
 
 
 if __name__ == '__main__':
