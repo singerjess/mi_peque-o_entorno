@@ -21,24 +21,24 @@ class ClassroomAssignmentRepresentativesProblemMapper:
         self.create_x_sets_and_vars(course_classes_array, x_sets, x_vars)
 
         classes_by_course = self.get_classes_by_course(course_classes_array, courses_list)
-        z_f_inequalities = self.generate_z_f_inequalities(classes_by_course, courses_list)
-        non_neighboor_inequalities = self.create_non_neighboor_inequalities(x_sets, x_vars)
-        non_neighboor_edges_inequalities = self.create_non_neighboor_edges_inequalities(x_sets,
+        z_f_inequalities = self.generate_z_f_inequalities(classes_by_course, courses_list, x_sets)
+        non_neighbor_inequalities = self.create_non_neighbor_inequalities(x_sets, x_vars)
+        non_neighbor_edges_inequalities = self.create_non_neighbor_edges_inequalities(x_sets,
                                                                                         x_vars)
         feasibility_inequality = self.create_feasibility_inequality(x_vars,
                                                                     self.semester.total_classrooms)
         rep_feasible_inequalities = self.create_rep_feasibility_inequalities(x_sets, x_vars)
         inequalities.extend(rep_feasible_inequalities)
         inequalities.extend(z_f_inequalities)
-        inequalities.extend(non_neighboor_edges_inequalities)
-        inequalities.extend(non_neighboor_inequalities)
+        inequalities.extend(non_neighbor_edges_inequalities)
+        inequalities.extend(non_neighbor_inequalities)
         inequalities.append(feasibility_inequality)
         objective_function = "sum <f> in F : z[f]"
         all_sets = x_sets + [F_set]
         all_vars = x_vars + [z_var]
         return IntegerProgram(all_sets, all_vars, inequalities, objective_function)
 
-    def create_non_neighboor_edges_inequalities(self, x_sets, x_vars):
+    def create_non_neighbor_edges_inequalities(self, x_sets, x_vars):
 
         non_neighbors_edges_inequalities = []
         for index, x_var in enumerate(x_vars):
@@ -71,7 +71,7 @@ class ClassroomAssignmentRepresentativesProblemMapper:
     def vertices_are_connected(self, another_non_neighboor, non_neighboor, x_sets):
         return non_neighboor not in x_sets[another_non_neighboor]._set_range
 
-    def create_non_neighboor_inequalities(self, x_sets, x_vars):
+    def create_non_neighbor_inequalities(self, x_sets, x_vars):
         non_neighbors_inequalities = []
         for index, x_var in enumerate(x_vars):
             right_side = ""
@@ -83,11 +83,20 @@ class ClassroomAssignmentRepresentativesProblemMapper:
                     Inequation("1", right_side, Operator.LESS_OR_EQUAL))
         return non_neighbors_inequalities
 
-    def generate_z_f_inequalities(self, classes_by_course, courses_list):
+    def generate_z_f_inequalities(self, classes_by_course, courses_list, x_sets):
         inequalities = []
         for index, course in enumerate(courses_list):
             left_side = str(len(classes_by_course[index])) + " * " + "z[" + str(index) + "]"
             right_side = ""
+
+            should_break_chanchada = False
+            for class_1 in classes_by_course[index]:
+                for class_2 in classes_by_course[index]:
+                    if class_2 not in x_sets[class_1].set_range():
+                        should_break_chanchada = True
+            if should_break_chanchada:
+                inequalities.append(Inequation(left_side, "0", Operator.EQUAL))
+                continue
             # for class_of_course in classes_by_course[index]: romper la simetria
             if len(classes_by_course[index]) > 0:
                 selected_class = classes_by_course[index][0] # romper la simetria

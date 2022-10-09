@@ -25,7 +25,7 @@ class TestClassroomAssignmentProblemMapper:
         assert len(integer_problem.sets()) == 2
         assert integer_problem.sets()[0].name() == "I0"
         assert integer_problem.sets()[1].name() == "F"
-        assert len(integer_problem.subject_to()) == 3
+        assert len(integer_problem.subject_to()) == 4
         assert integer_problem.objective_function() == "sum <f> in F : z[f]"
 
     def test_one_course_with_two_classes_has_two_colors_if_they_overlap(self):
@@ -52,8 +52,14 @@ class TestClassroomAssignmentProblemMapper:
         assert integer_problem.sets()[1].set_range() == [1]
         assert integer_problem.sets()[2].name() == "F"
         assert integer_problem.sets()[2].set_range() == [0]
-        assert len(integer_problem.subject_to()) == 2
+        assert len(integer_problem.subject_to()) == 6
         assert integer_problem.objective_function() == "sum <f> in F : z[f]"
+        integer_program_zimpl_mapper = IntegerProgramZimplMapper()
+        result_string = integer_program_zimpl_mapper.map(integer_problem)
+        with open("../resources/demofile2.zpl", "w") as file1:
+            # Writing data to a file
+            file1.write(result_string)
+
 
     def test_one_course_with_two_classes_has_two_colors_if_they_dont_overlap(self):
         course = Course(name="pintura", teacher="Miss Jess", building_number=2)
