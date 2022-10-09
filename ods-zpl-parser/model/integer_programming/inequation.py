@@ -2,9 +2,9 @@ from enum import Enum
 
 
 class Operator(Enum):
-    EQUAL = 0
-    LESS_OR_EQUAL = 1
-    LESS = 2
+    EQUAL = '=='
+    LESS_OR_EQUAL = '<='
+    LESS = '<'
 
 
 class Inequation:

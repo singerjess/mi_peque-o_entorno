@@ -1,0 +1,17 @@
+set I0 := {0, 1, 2};
+set I1 := {1, 0, 2};
+set I2 := {2, 0, 1};
+set F := {0};
+var x_0[I0] binary;
+var x_1[I1] binary;
+var x_2[I2] binary;
+var z[F] binary;
+maximize pepe: sum <f> in F : z[f];
+subto name_0: x_0[0] + x_1[0] + x_2[0] == 1;
+subto name_1: x_1[1] + x_0[1] + x_2[1] == 1;
+subto name_2: x_2[2] + x_0[2] + x_1[2] == 1;
+subto name_3: 3 * z[0] <= x_0[0] + x_0[1] + x_0[2];
+subto name_4: 1 <= x_0[0] + x_1[0] + x_2[0];
+subto name_5: 1 <= x_1[1] + x_0[1] + x_2[1];
+subto name_6: 1 <= x_2[2] + x_0[2] + x_1[2];
+subto name_7: x_0[0] + x_1[1] + x_2[2]  <= 3;

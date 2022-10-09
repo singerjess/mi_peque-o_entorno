@@ -2,12 +2,21 @@ from enum import Enum
 
 
 class VarType(Enum):
-    INTEGER = 0
-    BINARY = 1
+    INTEGER = 'integer'
+    BINARY = 'binary'
 
 
 class Variable:
     def __init__(self, name: str, restrictions: str, var_type: VarType):
-        self.name = name
-        self.restrictions = restrictions
-        self.var_type = var_type
+        self._name = name
+        self._restrictions = restrictions
+        self._var_type = var_type
+
+    def name(self):
+        return self._name
+
+    def restrictions(self):
+        return self._restrictions
+
+    def var_type(self):
+        return self._var_type

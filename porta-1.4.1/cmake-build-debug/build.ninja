@@ -36,7 +36,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/jessicasinger/Desktop/repos/porta-1.4.1/cmake-build-debug/
+cmake_ninja_workdir = /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target porta_1_4_1
 
@@ -46,91 +46,91 @@ cmake_ninja_workdir = /Users/jessicasinger/Desktop/repos/porta-1.4.1/cmake-build
 
 build cmake_object_order_depends_target_porta_1_4_1: phony || CMakeFiles/porta_1_4_1.dir
 
-build CMakeFiles/porta_1_4_1.dir/src/arith.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/arith.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/arith.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/arith.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/arith.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/common.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/common.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/common.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/common.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/common.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/four_mot.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/four_mot.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/four_mot.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/four_mot.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/four_mot.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/inout.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/inout.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/inout.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/inout.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/inout.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/largecalc.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/largecalc.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/largecalc.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/largecalc.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/largecalc.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/log.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/log.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/log.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/log.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/log.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/mp.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/mp.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/mp.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/mp.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/mp.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/porta.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/porta.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/porta.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/porta.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/porta.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/portsort.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/portsort.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/portsort.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/portsort.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/portsort.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
   TARGET_PDB = porta_1_4_1.pdb
 
-build CMakeFiles/porta_1_4_1.dir/src/valid.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/porta-1.4.1/src/valid.c || cmake_object_order_depends_target_porta_1_4_1
+build CMakeFiles/porta_1_4_1.dir/src/valid.c.o: C_COMPILER__porta_1_4_1_Debug /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src/valid.c || cmake_object_order_depends_target_porta_1_4_1
   DEP_FILE = CMakeFiles/porta_1_4_1.dir/src/valid.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu11
-  INCLUDES = -I/Users/jessicasinger/Desktop/repos/porta-1.4.1/src
+  INCLUDES = -I/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/src
   OBJECT_DIR = CMakeFiles/porta_1_4_1.dir
   OBJECT_FILE_DIR = CMakeFiles/porta_1_4_1.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/porta_1_4_1.dir/
@@ -158,7 +158,7 @@ build porta_1_4_1: C_EXECUTABLE_LINKER__porta_1_4_1_Debug CMakeFiles/porta_1_4_1
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jessicasinger/Desktop/repos/porta-1.4.1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -169,7 +169,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/jessicasinger/Desktop/repos/porta-1.4.1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jessicasinger/Desktop/repos/porta-1.4.1 -B/Users/jessicasinger/Desktop/repos/porta-1.4.1/cmake-build-debug
+  COMMAND = cd /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1 -B/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -185,7 +185,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/jessicasinger/Desktop/repos/porta-1.4.1/cmake-build-debug
+# Folder: /Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug
 
 build all: phony porta_1_4_1
 
