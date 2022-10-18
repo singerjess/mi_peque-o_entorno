@@ -73,11 +73,11 @@ def main() -> int:
 
 def format_matrix(matrix):
     matrix_string = ""
-    row_str = ""
     for row in matrix:
+        row_str = ""
         for number in row:
             row_str += str(number) + " "
-        row_str = row_str[:-2]
+        row_str = row_str[:-1]
         matrix_string += row_str + "\n"
     return matrix_string
 

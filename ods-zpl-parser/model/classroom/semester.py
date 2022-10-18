@@ -16,7 +16,7 @@ class Semester:
 
         for index, _class in enumerate(self.course_classes):
             for another_index, _another_class in enumerate(self.course_classes):
-                if _class.intersects(_another_class):
+                if _class.intersects(_another_class) and index != another_index:
                     ady_matrix[index][another_index] = 1
                     ady_matrix[another_index][index] = 1
                 else:
