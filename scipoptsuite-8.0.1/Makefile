@@ -9,3 +9,4 @@ clean:
 
 exec:
 	docker exec -ti scip scip
+

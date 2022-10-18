@@ -15,12 +15,11 @@ class ClassroomAssignmentRepresentativesProblemMapper:
         x_vars = []
         inequalities = []
         F_set = IntegerProgramSet("F", list(range(0, len(self.semester.courses))))
-        course_classes_array = list(self.semester.course_classes)
         courses_list = list(self.semester.courses)
         z_var = Variable("z[F]", "", VarType.BINARY)
-        self.create_x_sets_and_vars(course_classes_array, x_sets, x_vars)
+        self.create_x_sets_and_vars(self.semester.course_classes, x_sets, x_vars)
 
-        classes_by_course = self.get_classes_by_course(course_classes_array, courses_list)
+        classes_by_course = self.get_classes_by_course(self.semester.course_classes, courses_list)
         z_f_inequalities = self.generate_z_f_inequalities(classes_by_course, courses_list, x_sets)
         non_neighbor_inequalities = self.create_non_neighbor_inequalities(x_sets, x_vars)
         non_neighbor_edges_inequalities = self.create_non_neighbor_edges_inequalities(x_sets,
@@ -57,6 +56,7 @@ class ClassroomAssignmentRepresentativesProblemMapper:
 
     def create_rep_feasibility_inequalities(self, x_sets, x_vars):
         # para que cada uno lo represente uno solo
+        # suma de x_i[j] = 1
         rep_feasible_inequalities = []
         for index, x_var in enumerate(x_vars):
             left_side = ""
@@ -89,12 +89,12 @@ class ClassroomAssignmentRepresentativesProblemMapper:
             left_side = str(len(classes_by_course[index])) + " * " + "z[" + str(index) + "]"
             right_side = ""
 
-            should_break_chanchada = False
+            z_f_not_feasible = False
             for class_1 in classes_by_course[index]:
                 for class_2 in classes_by_course[index]:
                     if class_2 not in x_sets[class_1].set_range():
-                        should_break_chanchada = True
-            if should_break_chanchada:
+                        z_f_not_feasible = True
+            if z_f_not_feasible:
                 inequalities.append(Inequation(left_side, "0", Operator.EQUAL))
                 continue
             # for class_of_course in classes_by_course[index]: romper la simetria
@@ -109,14 +109,14 @@ class ClassroomAssignmentRepresentativesProblemMapper:
             inequalities.append(z_f_inequality)
         return inequalities
 
-    def create_x_sets_and_vars(self, course_classes_array, sets, vars):
+    def create_x_sets_and_vars(self, course_classes_array, x_sets, x_vars):
         for index, course_class in enumerate(course_classes_array):
             non_intersected_classes = [index]
             for another_index, another_course_class in enumerate(course_classes_array):
-                if self.classes_dont_intersect(another_course_class, course_class):
+                if course_class.does_not_intersect(another_course_class):
                     non_intersected_classes.append(another_index)
-            sets.append(IntegerProgramSet("I" + str(index), non_intersected_classes))
-            vars.append(Variable(self.x_variable_string(index), "", VarType.BINARY))
+            x_sets.append(IntegerProgramSet("I" + str(index), non_intersected_classes))
+            x_vars.append(Variable(self.x_variable_string(index), "", VarType.BINARY))
 
     def x_variable_string(self, index):
         return "x_" + str(index) + "[I" + str(index) + "]"
@@ -130,10 +130,6 @@ class ClassroomAssignmentRepresentativesProblemMapper:
                     classes_of_course.append(index)
             classes_by_course[course_index] = classes_of_course
         return classes_by_course
-
-    def classes_dont_intersect(self, another_course_class: CourseClass, course_class: CourseClass):
-        return (
-                another_course_class.start_time >= course_class.end_time or another_course_class.end_time <= course_class.start_time or another_course_class.day != course_class.day)
 
     def create_feasibility_inequality(self, x_vars: [], total_classrooms: int):
         right_side = str(total_classrooms)

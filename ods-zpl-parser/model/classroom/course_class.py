@@ -17,3 +17,9 @@ class CourseClass:
     def __hash__(self):
         return (hash(self.course) ^ hash(self.start_time) ^ hash(self.end_time) ^ hash(
             self.day) ^ hash((self.course, self.start_time, self.end_time, self.day)))
+
+    def does_not_intersect(self, another_class):
+        return another_class.start_time >= self.end_time or another_class.end_time <= self.start_time or self.day != another_class.day
+
+    def intersects(self, another_class):
+        return not self.does_not_intersect(another_class)
