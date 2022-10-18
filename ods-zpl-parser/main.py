@@ -1,14 +1,11 @@
 import json
+import logging
 
 import unidecode as unidecode
-
-from mapper.classroom_assignment_representatives_problem_mapper import \
-    ClassroomAssignmentRepresentativesProblemMapper
-from mapper.integer_program_zimpl_mapper import IntegerProgramZimplMapper
-from model.classroom.course import Course
-from model.classroom.course_class import CourseClass
 from pyexcel_ods import get_data
 
+from model.classroom.course import Course
+from model.classroom.course_class import CourseClass
 from model.classroom.semester import Semester
 from model.classroom.spanish_day_of_week import DayOfWeek
 
@@ -31,7 +28,7 @@ def main() -> int:
         semesters.append(semester0)
         semesters.append(semester1)
 
-    for semester in semesters:
+    for sem_index, semester in enumerate(semesters):
         ady_matrix = semester.get_classes_adjancency_matrix()
         courses_matrix = semester.get_matrix_of_courses()
         clases_by_course = semester.classes_by_course()
@@ -41,20 +38,30 @@ def main() -> int:
 
         first_of_each_course = semester.get_first_of_each_course()
 
-        with open("resources/ady_matrix.txt", "w") as file1:
+        with open("../scipoptsuite-8.0.1/test_cases/aux/reps/ady_matrix_" + str(sem_index) + ".txt",
+                  "w") as file1:
             # Writing data to a file
             file1.write(format_matrix(ady_matrix))
-        with open("resources/data.txt", "w") as file1:
+        with open("../scipoptsuite-8.0.1/test_cases/aux/reps/data_" + str(sem_index) + ".txt",
+                  "w") as file1:
             # Writing data to a file
-            file1.write("clases: " +str(len(semester.course_classes)) + ", cursos: " + str(len(
-                semester.courses)))
-        with open("resources/courses_matrix.txt", "w") as file1:
+            file1.write("clases: " + str(len(semester.course_classes)) + ", cursos: " + str(
+                len(semester.courses)))
+        with open("../scipoptsuite-8.0.1/test_cases/aux/reps/courses_matrix_" + str(sem_index) +
+                  ".txt",
+                  "w") as file1:
             # Writing data to a file
             file1.write(format_matrix(courses_matrix))
-        with open("../scipoptsuite-8.0.1/test_cases/aux/amount_per_course.txt", "w") as file1:
+        with open("../scipoptsuite-8.0.1/test_cases/aux/reps/amount_per_course_" + str(sem_index) +
+                  ".txt",
+                  "w") as file1:
+            logging.error(len(amount_per_course))
             file1.write(list_to_string(amount_per_course))
 
-        with open("../scipoptsuite-8.0.1/test_cases/aux/first_of_each_course.txt", "w") as file1:
+        with open(
+                "../scipoptsuite-8.0.1/test_cases/aux/reps/first_of_each_course_" + str(
+                    sem_index) + ".txt",
+                "w") as file1:
             # Writing data to a file
             file1.write(list_to_string(first_of_each_course))
         break
@@ -80,7 +87,7 @@ def list_to_string(a_list):
     for number in a_list:
         list_string += str(number) + " "
 
-    return list_string[:-3]
+    return list_string[:-1]
 
 
 # def porqueria() -> int:
