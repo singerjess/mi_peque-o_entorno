@@ -18,7 +18,7 @@ def main() -> int:
     i = 0
     for semester_key in all_semesters_json_data.keys():
         classes = []
-        courses = set({})
+        courses = []
         semester0 = Semester(set({}), [], semester_key + "_pabellon1", total_classrooms[i])
         semester1 = Semester(set({}), [], semester_key + "_pabellon2", total_classrooms[i + 1])
         i += 2
@@ -64,7 +64,6 @@ def main() -> int:
                 "w") as file1:
             # Writing data to a file
             file1.write(list_to_string(first_of_each_course))
-        break
     return 0
 
 
@@ -127,7 +126,7 @@ def list_to_string(a_list):
 
 
 def parse_ods_file():
-    all_semesters_data = get_data("resources/instancias-cambiadas.ods")
+    all_semesters_data = get_data("resources/instancias.ods")
     all_semesters_json_data = json.loads(json.dumps(all_semesters_data))
     return all_semesters_json_data
 
@@ -147,7 +146,7 @@ def parse_course_and_class(classes: [], classes_json_data, courses):
         course = Course(name=class_data[0], teacher=str(class_data[2]),
                         building_number=class_data[10])
         if course not in courses:
-            courses.add(course)
+            courses.append(course)
         if class_data[4] != "":
             classes.append(CourseClass(course=course,
                                        day=DayOfWeek[unidecode.unidecode(class_data[4]).upper()],

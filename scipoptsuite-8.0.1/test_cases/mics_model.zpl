@@ -1,10 +1,10 @@
-set V := {1..235};
-set F := {1..127};
-set C := {1..21};
-param VECINOS[V*V] := read "/test_cases/aux/reps/ady_matrix_0.txt" as "n+";
+set V := {1..238};
+set F := {1..74};
+set C := {1..20};
+param VECINOS[V*V] := read "/test_cases/aux/reps/ady_matrix_11.txt" as "n+";
 var x[V*C] binary;
 var z[F] binary;
-param ESDELCURSO[F*V] := read "/test_cases/aux/reps/courses_matrix_0.txt" as "n+";
+param ESDELCURSO[F*V] := read "/test_cases/aux/reps/courses_matrix_11.txt" as "n+";
 maximize cursos_misma_aula: sum <f> in F: z[f];
 subto un_solo_color_cada_uno: # constraint 1
     forall <i> in V:
