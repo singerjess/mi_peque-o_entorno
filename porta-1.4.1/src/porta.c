@@ -101,8 +101,10 @@ int main( int argc, char *argv[] )
     ieq_file = !strcmp(*argv+strlen(*argv)-4,".ieq");
     poi_file = !strcmp(*argv+strlen(*argv)-4,".poi");
     
-    if (!poi_file && !ieq_file)
-        msg(strcat(*argv, "invalid format of command line"), "", 0 );
+    if (!poi_file && !ieq_file) {
+        msg("jessii", "", 0);
+        msg(strcat(*argv, "invalid format of command line"), "", 0);
+    }
     /*
      * change by M.S. 5.6.92:
      * read_input_file writes to the output file, if is_set(Sort).
