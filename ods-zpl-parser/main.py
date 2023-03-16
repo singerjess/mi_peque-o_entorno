@@ -142,7 +142,11 @@ def get_semester_for_both_buildings(classes, semester0, semester1):
 
 
 def parse_course_and_class(classes: [], classes_json_data, courses):
+    i = 0
     for class_data in classes_json_data:
+        if i == 5:
+            break
+        i+=1
         course = Course(name=class_data[0], teacher=str(class_data[2]),
                         building_number=class_data[10])
         if course not in courses:

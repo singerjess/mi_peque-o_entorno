@@ -1,1 +1,1 @@
-clases: 265, cursos: 150
+clases: 5, cursos: 4
