@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug"
+			"value" : "/Users/jessicasinger/Desktop/repos/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -419,7 +419,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1"
+			"value" : "/Users/jessicasinger/Desktop/repos/mi_peque-o_entorno/porta-1.4.1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -651,7 +651,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -991,7 +991,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug"
+			"value" : "/Users/jessicasinger/Desktop/repos/mi_peque-o_entorno/porta-1.4.1/cmake-build-debug"
 		},
 		{
 			"name" : "porta_1_4_1_IS_TOP_LEVEL",
@@ -1015,7 +1015,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/jessicasinger/Desktop/repos/tesis/mi_peque-o_entorno/porta-1.4.1"
+			"value" : "/Users/jessicasinger/Desktop/repos/mi_peque-o_entorno/porta-1.4.1"
 		}
 	],
 	"kind" : "cache",

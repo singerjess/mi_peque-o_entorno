@@ -86,7 +86,7 @@ int main( int argc, char *argv[] )
             porta_log( "%s ", argv[i] );
         porta_log( "\n\n" );
     }
-            
+
 
     initialize();
     set_I_functions();
@@ -102,9 +102,11 @@ int main( int argc, char *argv[] )
         (*argv)[strlen(*argv)-4] = '\0';
     }
     setbuf(prt,CP 0);
-    
+
     if (is_set(Vint) && !strcmp(*argv+strlen(*argv)-4,".ieq")) 
-    {  
+    {
+
+        printf("hpp4");
             char *cp1,*cp2;
         cp1=strdup("LOWER_BOUNDS");
         cp2=strdup("UPPER_BOUNDS");
@@ -119,6 +121,7 @@ int main( int argc, char *argv[] )
     }
     else 
     {
+
         pothie = !strcmp(*argv+strlen(*argv)-4,".poi") 
             && !strcmp(*(argv+1)+strlen(*(argv+1))-4,".ieq");
         iethpo = !strcmp(*argv+strlen(*argv)-4,".ieq") 
@@ -141,8 +144,7 @@ int main( int argc, char *argv[] )
                                      "\0", (int **)&i,"\0", (int **)&i,"\0", (RAT **)&i );
         }
         if (j != dim) 
-            msg("dimensions in input files are different", "", 0 ); 
-        
+            msg("dimensions in input files are different", "", 0 );
         if (is_set(Iespo)) 
         {
             sort_eqie_cvce(ar1,ineq,dim+2,&equa,&ineq);
@@ -158,6 +160,7 @@ int main( int argc, char *argv[] )
                              ar1,ineq,dim+2,0,(char **)fout);
             else 
             {
+
                 char fname[100];
                 char command[100];
                 RAT *ar1p;

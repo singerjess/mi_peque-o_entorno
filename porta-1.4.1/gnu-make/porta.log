@@ -124,3 +124,329 @@ jess capa pasasget esa parte
 log for ./bin/xporta -D /Users/jessicasinger/Desktop/repos/porta-1.4.1/examples/example.poi -f ./examples/pep.prt 
 
 jess capa pasasaaget esa parte
+
+
+
+log for bin/xporta fctp ../examples/otro_mas.ieq 
+
+jessii
+
+
+
+log for bin/valid fctp ../examples/otro_mas.ieq 
+
+jeessinvalid format of command line
+
+
+
+log for ./bin/xporta -D ../examples/otro_mas.ieq 
+
+jessinvalid format of command line
+
+
+
+log for ./bin/xporta -T ../examples/otro_mas.ieq 
+
+input file ../examples/otro_mas.ieq o.k.
+dimension              :   17 
+number of equations    :    5 
+number of inequalities :   27 
+
+Gauss - elimination (input - equations) :
+ elimination of variable 1
+ elimination of variable 4
+ elimination of variable 7
+ elimination of variable 10
+ elimination of variable 13
+
+no valid point known 
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 3 : invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 19: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 18: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 18: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 20: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 21: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 21: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 21: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 17: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/example_2.ieq 
+
+input file ../examples/example_2.ieq o.k.
+dimension              :   17 
+number of equations    :    4 
+number of inequalities :   21 
+
+Gauss - elimination (input - equations) :
+ elimination of variable 1
+ elimination of variable 4
+ elimination of variable 7
+ elimination of variable 10
+
+no valid point known 
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+../examples/2_gateways_2_canales_1_sensor.ieq, line 21: invalid format
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+input file ../examples/2_gateways_2_canales_1_sensor.ieq o.k.
+dimension              :   10 
+number of equations    :    4 
+number of inequalities :    4 
+
+Gauss - elimination (input - equations) :
+ elimination of variable 1
+ elimination of variable 3
+ elimination of variable 5
+ elimination of variable 7
+
+no valid point known 
+
+
+
+log for ./bin/xporta -D ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+jessinvalid format of command line
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+input file ../examples/2_gateways_2_canales_1_sensor.ieq o.k.
+dimension              :   10 
+number of equations    :    4 
+number of inequalities :    4 
+
+Gauss - elimination (input - equations) :
+ elimination of variable 1
+ elimination of variable 3
+ elimination of variable 5
+ elimination of variable 7
+
+no valid point known 
+
+
+
+log for ./bin/valid -V ../examples/2_gateways_2_canales_1_sensor.ieq 
+
+input file ../examples/2_gateways_2_canales_1_sensor.ieq o.k.
+dimension              :   10 
+number of equations    :    4 
+number of inequalities :    4 
+
+computing all valid integral points ...
+
+number of valid integral points : 52
+
+integral points written to file ../examples/2_gateways_2_canales_1_sensor.poi
+
+
+
+log for ./bin/xporta -T ../examples/2_gateways_2_canales_1_sensor.poi 
+
+input file ../examples/2_gateways_2_canales_1_sensor.poi o.k.
+dimension              :   10 
+number of cone-points  :    0 
+number of conv-points  :   52 
+
+GAUSS - ELIMINATION:
+| iter- |     # equa |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |            |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |            |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    11 |         11 |        1 |    1 |   n |   0.43 |      72 |      0.00 |      0.00 |
+|    10 |         10 |        2 |    1 |   n |   0.41 |      72 |      0.00 |      0.00 |
+|     9 |          9 |        3 |    1 |   n |   0.37 |      72 |      0.00 |      0.00 |
+ variable 1 eliminated - finite equation found
+|     8 |          8 |        4 |    1 |   n |   0.41 |      72 |      0.00 |      0.00 |
+|     7 |          7 |        5 |    2 |   n |   0.39 |      72 |      0.00 |      0.00 |
+ variable 3 eliminated - finite equation found
+|     6 |          6 |        6 |    2 |   n |   0.43 |      72 |      0.00 |      0.00 |
+|     5 |          5 |        7 |    2 |   n |   0.42 |      72 |      0.00 |      0.00 |
+ variable 5 eliminated - finite equation found
+|     4 |          4 |        8 |    2 |   n |   0.48 |      72 |      0.00 |      0.00 |
+|     3 |          3 |        9 |    2 |   n |   0.46 |      72 |      0.00 |      0.00 |
+|     2 |          2 |       10 |    2 |   n |   0.50 |      72 |      0.00 |      0.00 |
+ variable 7 eliminated - finite equation found
+|     1 |          1 |       11 |    2 |   n |   0.56 |      73 |      0.00 |      0.00 |
+
+FOURIER - MOTZKIN - ELIMINATION:
+| iter- |      upper |  # ineq  |   max| long|   non- |     mem |  cpu-time | real-time |
+| ation |      bound |          |  bit-|arith|  zeros |    used |      used |      used |
+|       |     # ineq |          |length|metic|   in % |   in kB |    in sec |    in sec |
+|-------|------------|----------|------|-----|--------|---------|-----------|-----------|
+|    45 |          8 |        8 |    2 |   n |   0.16 |     857 |      0.00 |      0.00 |
+|    44 |          9 |        8 |    2 |   n |   0.17 |     857 |      0.00 |      0.00 |
+|    43 |          9 |        8 |    2 |   n |   0.19 |     857 |      0.00 |      0.00 |
+|    42 |         10 |       10 |    3 |   n |   0.24 |     857 |      0.00 |      0.00 |
+|    41 |         12 |        9 |    2 |   n |   0.21 |     857 |      0.00 |      0.00 |
+|    40 |         10 |        9 |    2 |   n |   0.22 |     857 |      0.00 |      0.00 |
+|    39 |         12 |       12 |    2 |   n |   0.32 |     857 |      0.00 |      0.00 |
+|    38 |         15 |       11 |    2 |   n |   0.28 |     857 |      0.00 |      0.00 |
+|    37 |         17 |       13 |    3 |   n |   0.37 |     857 |      0.00 |      0.00 |
+|    36 |         19 |       11 |    2 |   n |   0.31 |     857 |      0.00 |      0.00 |
+|    35 |         15 |       12 |    3 |   n |   0.34 |     857 |      0.00 |      0.00 |
+|    34 |         16 |       11 |    2 |   n |   0.31 |     857 |      0.00 |      0.00 |
+|    33 |         21 |       17 |    3 |   n |   0.43 |     857 |      0.00 |      0.00 |
+|    32 |         27 |       15 |    3 |   n |   0.39 |     857 |      0.00 |      0.00 |
+|    31 |         22 |       16 |    3 |   n |   0.41 |     857 |      0.00 |      0.00 |
+|    30 |         23 |       15 |    3 |   n |   0.39 |     857 |      0.00 |      0.00 |
+|    29 |         23 |       16 |    3 |   n |   0.42 |     857 |      0.00 |      0.00 |
+|    28 |         24 |       14 |    3 |   n |   0.38 |     857 |      0.00 |      0.00 |
+|    27 |         20 |       14 |    3 |   n |   0.38 |     857 |      0.00 |      0.00 |
+|    26 |         20 |       13 |    2 |   n |   0.36 |     857 |      0.00 |      0.00 |
+|    25 |         14 |       13 |    2 |   n |   0.37 |     857 |      0.00 |      0.00 |
+|    24 |         17 |       14 |    2 |   n |   0.41 |     857 |      0.00 |      0.00 |
+|    23 |         18 |       13 |    2 |   n |   0.38 |     857 |      0.00 |      0.00 |
+|    22 |         19 |       16 |    3 |   n |   0.47 |     857 |      0.00 |      0.00 |
+|    21 |         22 |       14 |    2 |   n |   0.42 |     857 |      0.00 |      0.00 |
+|    20 |         19 |       14 |    3 |   n |   0.43 |     857 |      0.00 |      0.00 |
+|    19 |         19 |       13 |    2 |   n |   0.39 |     857 |      0.00 |      0.00 |
+|    18 |         23 |       18 |    3 |   n |   0.51 |     857 |      0.00 |      0.00 |
+|    17 |         28 |       16 |    3 |   n |   0.48 |     857 |      0.00 |      0.00 |
+|    16 |         23 |       16 |    3 |   n |   0.48 |     857 |      0.00 |      0.00 |
+|    15 |         23 |       15 |    3 |   n |   0.46 |     857 |      0.00 |      0.00 |
+|    14 |         23 |       16 |    3 |   n |   0.49 |     857 |      0.00 |      0.00 |
+|    13 |         24 |       14 |    3 |   n |   0.45 |     857 |      0.00 |      0.00 |
+|    12 |         20 |       14 |    3 |   n |   0.45 |     857 |      0.00 |      0.00 |
+|    11 |         20 |       13 |    2 |   n |   0.41 |     857 |      0.00 |      0.00 |
+|    10 |         20 |       18 |    3 |   n |   0.54 |     857 |      0.00 |      0.00 |
+|     9 |         25 |       17 |    3 |   n |   0.52 |     857 |      0.00 |      0.00 |
+|     8 |         24 |       17 |    3 |   n |   0.52 |     857 |      0.00 |      0.00 |
+|     7 |         24 |       16 |    3 |   n |   0.50 |     857 |      0.00 |      0.00 |
+|     6 |         23 |       17 |    3 |   n |   0.52 |     857 |      0.00 |      0.00 |
+|     5 |         24 |       16 |    3 |   n |   0.50 |     857 |      0.00 |      0.00 |
+|     4 |         24 |       19 |    3 |   n |   0.56 |     857 |      0.00 |      0.00 |
+|     3 |         27 |       18 |    3 |   n |   0.54 |     857 |      0.00 |      0.00 |
+|     2 |         32 |       18 |    4 |   n |   0.54 |     857 |      0.00 |      0.00 |
+|     1 |         32 |       16 |    3 |   n |   0.50 |     857 |      0.00 |      0.00 |
+
+sum of inequalities over all iterations :    633
+maximal number of inequalities          :     19
+
+transformation to integer values 
+sorting system 
+transformation to integer values 
+sorting system 
+
+number of equations    :    4 
+number of inequalities :   16 
+
+output written to file ../examples/2_gateways_2_canales_1_sensor.poi.ieq
+
+
+
+
+log for ./bin/valid -C ../examples/2_gateways_2_canales_1_sensor.ieq ../examples/2_gateways_2_canales_1_sensor.poi 
+
+input file ../examples/2_gateways_2_canales_1_sensor.ieq o.k.
+dimension              :   10 
+number of equations    :    4 
+number of inequalities :    4 
+
+input file ../examples/2_gateways_2_canales_1_sensor.poi o.k.
+dimension              :   10 
+number of cone-points  :    0 
+number of conv-points  :   52 
+
+only inequalities are allowed
+
+
+
+log for ./bin/valid -C ../examples/2_gateways_2_canales_1_sensor.ieq ../examples/2_gateways_2_canales_1_sensor.poi 
+
+input file ../examples/2_gateways_2_canales_1_sensor.ieq o.k.
+dimension              :   10 
+number of equations    :    4 
+number of inequalities :    4 
+
+input file ../examples/2_gateways_2_canales_1_sensor.poi o.k.
+dimension              :   10 
+number of cone-points  :    0 
+number of conv-points  :   52 
+
+only inequalities are allowed
+
+
+
+log for ./bin/xporta -D ../examples/2_gateways_2_canales_1_sensor.ieq ../examples/2_gateways_2_canales_1_sensor.poi 
+
+jessinvalid format of command line
+
+
+
+log for ./bin/xporta -T ../examples/3_gateways_2_canales_3_sensor.ieq 
+
+../examples/3_gateways_2_canales_3_sensor.ieq, line 13 : invalid format
+
+
+
+log for ./bin/xporta -T ../examples/3_gateways_2_canales_3_sensor.ieq 
+
+input file ../examples/3_gateways_2_canales_3_sensor.ieq o.k.
+dimension              :   21 
+number of equations    :    6 
+number of inequalities :   18 
+
+Gauss - elimination (input - equations) :
+ elimination of variable 1
+ elimination of variable 3
+ elimination of variable 5
+ elimination of variable 7
+ elimination of variable 10
+ elimination of variable 13
+
+no valid point known 
